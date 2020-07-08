@@ -1,20 +1,8 @@
 The [docs.eduvpn.org](https://docs.eduvpn.org) website!
 
-Please submit a PR if you want to modify anything :)
-
-Pages on the site can be found in `pages/` and blog posts in `posts/`.
-
-Documentation can be updated using the `update-docs.sh` script.
-
-If you use a Linux system you can usually install 
-[Composer](https://getcomposer.org/) using your package manager. 
-
-    $ sudo yum install composer
-    $ sudo dnf install composer
-    $ sudo apt install composer
-
-On other platforms, e.g. macOS, you can download it 
-[here](https://getcomposer.org/composer.phar).
+Documentation can be updated from the Git repository using the 
+`update-docs.sh` script, it will put the repository in the `documentation/` 
+folder.
 
 To install the dependencies:
 
@@ -35,4 +23,4 @@ To view the generated site locally:
 To upload to the server (assuming you configured your SSH correctly and have
 the right permissions): 
 
-    $ ./upload.sh
+    $ sh upload.sh
