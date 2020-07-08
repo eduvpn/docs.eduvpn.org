@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0 auto;
+  background-color: #eeeeee;
+  max-width: 900px;
+}
+
+@media (min-width: 900px) {
+  div.header {
+    padding-top: 1em;
+    background: url(../img/header.jpg) no-repeat;
+    width: 900px;
+    height: 225px;
+  }
+  div.header h1, div.header h2 {
+    color: #fff;
+  }
+  ul.pages {
+    margin-top: 3em;
+  }
+}
+
+div.header h1, div.header h2 {
+  text-align: center;
+}
+
+div.content {
+  text-align: justify;
+  padding: 1em 1.5em;
+  background-color: #fff;
+}
+
+ul.pages {
+  padding: 0;
+  text-align: center;
+}
+
+ul.pages li {
+  list-style: none;
+  display: inline-block;
+  padding: 1em;
+}
+
+ul.pages li.active a {
+  background-color: #df7f0c;
+  color: #fff;
+}
+
+ul.pages li a {
+  background-color: #fff;
+  color: #444;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.content a {
+  text-decoration: underline;
+}
+
+ul.index {
+  padding: 0;
+}
+
+ul.index li {
+  list-style: none;
+  margin: 0.5em 0;
+}
+
+div.footer {
+  margin: 1.5em 0;
+  color: #888;
+  font-size: 75%;
+  text-align: center;
+}
+
+div.footer a {
+  color: #888;
+}
+
+div.content img, div.content video, div.content audio {
+  display: block;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+div.content a img {
+  margin: 0;
+}
+
+div.content a {
+  color: #df7f0c;
+}
+
+blockquote, pre {
+  background-color: #f0f0f0;
+  padding: 1em;
+}
+
+dd {
+  font-size: 90%;
+  margin-left: 1em;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 0.1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+thead tr {
+  background-color: #444;
+  color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+td, th {
+  padding: 0.5em;
+}
+
+td {
+  vertical-align: top;
+}
+
+p.center {
+  text-align: center;
+}
+
+small {
+  color: gray;
+  font-size: 80%;
+}
