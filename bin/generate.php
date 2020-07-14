@@ -109,6 +109,9 @@ foreach (glob(sprintf('%s/*.md', $docDir)) as $docFile) {
 
 $docsCategoryList = [];
 foreach ($docsList as $docInfo) {
+    if ('dev' === $docInfo['category']) {
+        continue;
+    }
     $docCategory = ucfirst($docInfo['category']);
     if (!array_key_exists($docCategory, $docsCategoryList)) {
         $docsCategoryList[$docCategory] = [];
